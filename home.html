@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>College Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<style type="text/css">
+        *{padding:0; margin:0; text-decoration:none; list-style:none;}
+        body{font-family:Verdana, Geneva, Tahoma, sans-serif; overflow-x:hidden;}
+        .px-5 {padding-right:2rem !important; padding-left:2rem !important;}
+        .nav-fix{position:fixed; width:100%;}
+        .logo{height:60px; width:60px; border-radius:10%;}
+        .navbar{-webkit-box-shadow:0 7px 5px -5px black; -moz-box-shadow:0 7px 5px -5px black; box-shadow:0 7px 5px -5px black;}
+        .navbar-brand {margin-left:2rem; font-family:sans-serif; font-size:1.8rem; font-weight:bold; text-transform:uppercase;}
+        .dropdown-menu{margin-left:-138px; background-color:aliceblue;}
+        @media(max-width:992px){
+            .dropdown-menu{margin-left:0px; background-color:aliceblue; width:fit-content;}
+        }
+        .clg-img{width:100%; background-image:url(images/subharti.jpg); background-size:cover; background-attachment:fixed;}
+        @media(max-width:505px){
+            .navbar-brand{font-size:x-small;}
+        }
+        .notify{background-color:aliceblue;}
+        .founder{background-color:#fff;}
+        .updte{padding-top:13px; padding:0px 22px; color:#1b9bff; font-style:italic;}
+        .navbar-collapse ul li a:hover{background:#1b9bff; border-radius:8px; color:white !important;}
+
+        .container2{width:100%; background-image:url(images/subharti.jpg); background-size:cover; background-attachment:fixed;}
+        .clg-img{width:100%; height:170px; padding-top:74px;}
+        .clg-name{width:100%; color:white;}
+        .clg-name h1{font-size:40px; font-weight:bold; padding-top:250px; text-align:center;}
+        .clg-name p{padding-bottom:365px; text-align:center;}
+
+        .slide-container{position:relative; width:100%;}
+        .slide img{width:100%; height:85vh;}
+        .arrow{cursor:pointer; position:absolute; top:45%; background-color:aliceblue; color:black; padding:8px 14px; border-radius:50%; font-size:24px; font-weight:bold;}
+        .prev{left:10px;}
+        .next{right:10px;}
+        .caption{color:#fff; font-size:30px; font-weight:bold; position:absolute; bottom:0; width:100%; text-align:center; background-color:rgba(0,0,0,0.5); padding:15px 0px;}
+        .slide{display:none;}
+
+
+        .container3{background-color:#fff; width:100%; display:flex;}
+        .vision{background-color:darkslateblue;}
+        .management{background-color:#fff; padding:60px;}
+        .mang-head{font-size:35px; font-weight:bold; text-transform:uppercase; color:cornflowerblue; letter-spacing:0.13em; padding-bottom:32px;}
+        .images{height:250px; width:280px; padding:20px;}
+
+        .apply{background-color:darkslateblue;}
+        h1{margin-bottom:0px !important; font-weight:bold; padding:30px;}
+        .apply h1 a{text-decoration:none; color:#fff;}
+
+        .s-icon{font-size:30px; padding-right:12px;}
+        .social-head{font-size:20px;}
+
+        h2{font-weight:bold !important;}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-5 nav-fix">
+        <div class="container-fluid">
+          <div><img src="images/su-logo.jpg" alt="logo" class="logo img-fluid"></div>
+          <a class="navbar-brand" href="home.html"> Online Admission Portal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto text-light">
+                    <li class="nav-item"> <a class="nav-link active" aria-current="page" href="home.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="Signup.php">Register</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="login.php">Login</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#about">About-Us</a> </li>
+                    <li class="nav-item"> <a class="nav-link active" href="#contact">Contact-Us</a> </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active text" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Colleges </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="colleges">
+                            <li><a class="dropdown-item" href="login.php">Keral Verma Faculty Of Science</a></li>
+                            <li><a class="dropdown-item" href="#">Engineering (SITE)</a></li>
+                            <li><a class="dropdown-item" href="#">Fine Art's</a></li>
+                            <li><a class="dropdown-item" href="#">Polytechnic College</a></li>
+                            <li><a class="dropdown-item" href="#">Law College</a></li>
+                            <li><a class="dropdown-item" href="#">Medical College</a></li>
+                            <li><a class="dropdown-item" href="#">Dental College</a></li>
+                            <li><a class="dropdown-item" href="#">Nursing College</a></li>
+                            <li><a class="dropdown-item" href="#">Hotel Management</a></li>
+                        </ul>
+                    </li>
+                </ul>
+           </div>
+        </div>
+    </nav>
+    <div class="container2">
+        <!-- <div><img src="images/clg-logo.jpg" alt="subharti university" class="clg-img img-fluid"></div> -->
+        <div class="clg-name">
+            <h1>Swami vivekanand subharti university Meerut</h1>
+            <p>Aducation is the most powerfull weopen which you can use to change the world</p>
+        </div>
+        
+        <div class="slide-container">
+            <div class="slide">
+                <img src="images/s.webp" alt="" class="img-fluid"> <div class="caption">Law</div>
+            </div>
+            <div class="slide">
+                <img src="images/s0.webp" alt="" class="img-fluid"> <div class="caption">Hotel Management</div>
+            </div>
+            <div class="slide">
+                <img src="images/s6.jpg" alt="" class="img-fluid"> <div class="caption">Dental</div>
+            </div>
+            <div class="slide">
+                <img src="images/s7.webp" alt="" class="img-fluid"> <div class="caption">Science</div>
+            </div>
+            <div class="slide">
+                <img src="images/s8.jpg" alt="" class="img-fluid"> <div class="caption">Medical</div>
+            </div>
+            <div class="slide">
+                <img src="images/s4.jpg" alt="" class="img-fluid"> <div class="caption">Engineering</div>
+            </div>
+            <span class="arrow prev" onclick="controller(-1)"> &lt; </span>
+            <span class="arrow next" onclick="controller(1)"> &gt; </span>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 p-3 text-dark text-center notify">
+                <h2>UPDATE SECTION</h2>
+                <div class="updte">
+                    <marquee direction="up">
+                        <p>
+                            Html is use to create a web pages content <br><br> Css is use to show the web pages style, means desining part <br><br>
+                            Javascript is use to show the perform work our web pages <br><br> C language is use to understand the logic of programing language <br><br>
+                            C++ is super set of c language <br><br> Java is 99% object oriented programing language <br><br>
+                            Javascript is use to show the perform work our web pages <br><br> C language is use to understand the logic of programing language <br><br>
+                            C++ is super set of c language <br><br> Java is 99% object oriented programing language
+                        </p>
+                    </marquee>
+                </div>
+            </div>
+            <div class="col-sm-8 p-3 text-dark text-center founder" id="about">
+                <h2>FOUNDERS</h2>
+                <p><b>Dr. Mukti Bhatnagar (16th January 1957- 07th June 2021)</b><br> Dr. Mukti, who was the founder of Subharti, believed in the pursuit of excellence and in overcoming all difficulties by virtue of hard work and perseverance. She made sure that
+                    the university was an exceptional and exquisite learning educational hub, offering a variety of value-based, career-oriented disciplines of technical and professional education, thus engaged in creating highly qualified, academically, and technically
+                    proficient professionals, who are responsive to the emerging needs of the Nation. We at Subharti now pledge to take her dream of perfection and excellence forward and take the university to newer heights to which
+                    she dreamt of. We will ensure that the process of education is enriched with the overall personality development and sharpening of the inherent capabilities of an individual, by providing an environment, fully
+                    conducive to the overall development of students, thus maintaining a balance between academic excellence and moral perfection, similar to how she had imagined it to be while shaping the university.
+                </p><br>
+                <p><b>Prof. (Dr.) Atul Krishna</b><br>The boy who set out to make his dream a success was none other than Dr Atul Krishna, who was still in his sophomore year at LLRM Medical College, Meerut at that time. Armed with a post graduate degree in General Surgery,
+                    Dr Atul soon set out to realize his dream which had already taken shape in his mind. The dream was to establish such institutions of education and training that would produce highly skilled graduates and masters of academic excellence in every field and
+                    all aspects of life.Graced with fore-vision, versatility, a genius mind and gifted with a vibrant and vivacious personality, Dr Atul Krishna is not only a reputed surgeon of Northern India but is also a great philanthropist, a learned thinker, visionary
+                    and a committed, staunch social reformer, dedicated to the upliftment of the downtrodden and weaker sections of society. Dr Atul Krishna is the visionary who spearheaded the Subharti Movement and established MTV Religious and Charitable Trust(formerly known
+                    as Subharti KKB Charitable Trust,') a duly registered body, engaged in social service and various other activities. He has also established several primary, secondary level schools and rural hospitals in the remotest villages. Dr Atul is not only an ardent
+                    follower of Indian culture but is also a diehard patriot. He is a guiding force in bringing people together by removing hatred arising out of casteism and communalism, spreading love and harmony, building up moral and national character along with service of
+                    mankind so as to make his dream of 'Vasudaiva Kutumbakam' Come true. ‘‘संकल्प एक नए भारत का “ (SOLEMN VOW FOR A NEW INDIA).
+                </p><br>
+            </div>
+        </div>
+
+        <div class="col-sm-12 p-3 text-light text-center vision">
+            <h1>Our vision</h1>
+            <p> To be an acclaimed University that provides contemporary Technical and Professional knowledge, skills as well as research opportunities befitting global scenarios while maintaining Service, Sacrament, and Nationality.</p>
+            <h1>Our mission</h1>
+            <p>To develop programs of the highest standards, and to produce confident, self-reliant, responsible youth having skills, social values, leadership, and entrepreneurship bent of mind in highly competitive technologically advanced, ever-changing needs of society.</p>
+        </div>
+
+        <div class="row management">
+            <h1 class="mang-head text-center">Management of university</h1>
+            <div class="col-sm-4 p-3 text-dark text-center text-uppercase">
+                <img src="images/chancellor.webp" alt="" class="images"> <br><label style="color:cornflowerblue;">CHANCELLOR<br><br>Dr. Vijendra Pal Singh <br><br>Tel: 123-456-7890</label>
+            </div>
+            <div class="col-sm-4 p-3 text-dark text-center text-uppercase">
+                <img src="images/v-chanslar.png" alt="" class="images"> <br><label style="color:cornflowerblue;">VICE-CHANCELLOR<br><br>Maj Gen (Dr.) G.K. Thapliyal <br><br>Tel: 123-456-7890 </label>
+            </div>
+            <div class="col-sm-4 p-3 text-dark text-center text-uppercase">
+                <img src="images/The CEO.jpg" alt="" class="images"> <br><label style="color:cornflowerblue;">THE CEO<br><br>Dr. Shalya Raj<br><br>Tel: 123-456-7890 </label>
+            </div>
+        </div>
+
+        <div class="col-sm-12 text-light text-center apply">
+            <h1><a href="login.php">Apply Now</a></h1>
+        </div>
+      
+        <footer class="text-center text-lg-start bg-light text-muted">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <div class="me-5 d-none d-lg-block social-head">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/subhartiuni/"><i class='bx bxl-facebook-circle s-icon'></i></a>
+                    <a href="https://www.linkedin.com/school/subhartiuni/?originalSubdomain=in"><i class='bx bxl-linkedin s-icon'></i></a>
+                    <a href="https://www.instagram.com/subhartiuni.official/?hl=en"><i class='bx bxl-instagram s-icon'></i></a>
+                    <a href="https://twitter.com/subhartiofficia?lang=en"><i class='bx bxl-twitter s-icon'></i></a>
+                </div>
+            </section>
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">University Location</h6>
+                            <p>Address: Subhartipuram, NH-58, Delhi-Haridwar Bypass Road, Meerut (UP), PIN-250005.</p>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4"> Courses </h6>
+                            <p> <a href="Signup.php" class="text-reset">BCA</a> </p>
+                            <p>BBA</p>
+                            <p>MBA</p>
+                            <p>MCA</p>
+                            <p>B.tech </p>
+                            <p>Polytechnic </p>
+                            <p>All Medical Courses</p>
+                            <p> ........... </p>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4"> Useful links </h6>
+                            <p> <a href="#contact" class="text-reset">Contact</a> </p>
+                            <p> <a href="#colleges" class="text-reset">Colleges</a> </p>
+                            <p> <a href="#about" class="text-reset">About</a> </p>
+                            <p> <a href="#!" class="text-reset">Help</a> </p>
+                        </div>
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" id="contact">
+                            <h6 class="text-uppercase fw-bold mb-4"> Contact us</h6>
+                            <p> For General Enquiry: 9639222288,89,90,91,93,98.</p>
+                            <p>For International Inquiry (Mobile): +91-9639010168</p>
+                            <p> For International Inquiry (Phone): +91-121-6678000 (EXT–2724/2723)</p>
+                            <p>registrar@subharti.org</p>
+                            <p> Website : www.subharti.org</p>
+                            <p>Email Id: global@subharti.org</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2022 Copyright: <a class="text-reset fw-bold" href="http://project.ultimatefreehost.in/">Raju Ranjan</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let flag=0;
+        function controller(x){
+            flag = flag + x;
+            slideshow(flag);
+        }
+        slideshow(flag);
+        function slideshow(num){
+            let slides = document.getElementsByClassName('slide');
+            if(num == slides.length){
+                flag = 0;
+                num = 0;
+            }
+            if(num < 0){
+                flag = slides.length-1;
+                num = slides.length-1;
+            }
+            for(let a of slides){
+                a.style.display = "none";
+            }
+
+            slides[num].style.display = "block";
+        }
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
