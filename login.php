@@ -30,7 +30,7 @@
                             setcookie('passwordcookie',$password,time()+86400);
         
                             $_SESSION['EMAIL'] = $email;
-                            header('location:dashboard.php');
+                            header('location:Admin/admin.php');
                         }else{
                             $_SESSION['EMAIL'] = $email;
                             header('location:Admin/admin.php');

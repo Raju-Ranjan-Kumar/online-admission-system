@@ -16,14 +16,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet"/>
-        <style>
-            .container{width:100%; padding:10px 15px}
-            .heading1{padding:10px 0px; border-bottom:2px solid black;}
-            .table{width:90%; margin:5px auto;}
-            table, th, td { padding:10px 7px; border-bottom:1px solid black; border-collapse:collapse; }
-            .bx-low-vision{color:blue; font-size:22px; font-weight:bold; margin-left:7px;}
-            .bx-x{color:red; font-size:22px; font-weight:bold;}
-        </style>
     </head>
 <body>
     <?php 
@@ -62,17 +54,17 @@
                                 <th>Gender</th>
                                 <th>Course</th>
                                 <th>Address</th>
-                                <th colspan="2">Operation</th>
+                                <th>Status</th>
+                                <th>Reject</th>
                             </tr>
                         </thead>
                             <tbody>
                             <?php
                                 if(!isset($_SESSION['EMAIL']))
-                                // header('location:login.php');
-                                "<script> window.location.href='login.php'</script>";
+                                header('location:login.php');
                                 
                                 //Total Applications which is approved.
-                                $query = "SELECT * from registration WHERE isApproved=1";
+                                $query = "SELECT * FROM registration WHERE isApproved=1";
                                 $result = mysqli_query($con,$query);
                                 while($row = mysqli_fetch_assoc($result)){
                             ?>
@@ -85,8 +77,11 @@
                                 <td> <?php echo $row['Gender'];?></td>
                                 <td> <?php echo $row['Course'];?></td>
                                 <td> <?php echo $row['Address'];?></td>
-                                <td class="text-center"> <a href='view.php?id=<?php echo $row['Id'];?>'><i class='bx bx-low-vision'></i></a></td>
-                                <td> <a href='?id=<?php echo $row['Id'];?>'><i class='bx bx-x'></i></a></td>
+                                <?php if($row['isApproved']==1){ ?>
+                                    <td> <a href='view.php?id=<?php echo $row['Id'];?>'><i class='bx bxs-happy'></i></a></td>
+                                    <?php }
+                                ?>
+                                <td> <a href='?id=<?php echo $row['Id'];?>'><i class='bx bx-x ms-3'></i></a></td>
                             </tr>
                             <?php
                                }

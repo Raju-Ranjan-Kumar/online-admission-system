@@ -18,16 +18,16 @@
     <link href="css/style.css" rel="stylesheet"/>
     <title>Student View Details</title>
     <style>
-        .form-all{border-radius:22px;}
+        .form-all{border-radius:20px; margin: 20px auto;}
         .header-large .form-header {text-align:center; text-decoration-line: underline;}
-        .form-line {margin-top:6px; margin-bottom:6px;}
+        div.header-large {margin:2 -12px; padding:1.5em 55px;}
+        .form-line {padding: 5px 10px; margin: 2px 3px;}
         @media print{
             .form-section{display:inline!important}
             .form-pagebreak{display:none!important}
             .form-section-closed{height:auto!important}
             .page-section{position:initial!important}
         }
-        div.header-large {margin:2 -12px; padding:2em 55px;}
     </style>
 </head>
 <body>
@@ -62,7 +62,7 @@
                     // Reject the applicication based on id.
                     if(isset($_POST['reject'])){
                         $userid = $_GET['id'];
-                        $q = "UPDATE registration SET isApproved=-1 where Id='$userid'";
+                        $q = "UPDATE registration SET isApproved=-1 WHERE Id='$userid'";
                         $res = mysqli_query($con,$q);
                         if($res){
                             header('location:reject.php'); 
@@ -77,9 +77,7 @@
                         <ul class="form-section page-section">
                             <li id="cid_1" class="form-input-wide" data-type="control_head">
                                 <div class="form-header-group  header-large">
-                                    <div class="header-text httal htvam">
-                                        <h1 id="header_1" class="form-header" data-component="header"> Student Details </h1>
-                                    </div>
+                                    <h1 id="header_1" class="form-header" data-component="header"> Student Details </h1>
                                 </div>
                             </li>
                             <li class="form-line form-line-column form-col-2" data-type="control_phone" id="id_27">
@@ -118,6 +116,12 @@
                                     <input type="text" id="course" name="course" class="form-textbox validate[Course]" style="width:310px" size="310" value="<?php echo $row['Course'];?>" aria-labelledby="label_6 sublabel_input_6" />
                                 </div>
                             </li>
+                            <li class="form-line" data-type="control_address" id="id_23">
+                                <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23_addr_line1"> Address </label>
+                                <div id="cid_23" class="form-input-wide" data-layout="full">
+                                    <input type="text" id="address" name="address" class="form-textbox form-address-line" value="<?php echo $row['Address'];?>" data-component="address_line_1"/>
+                                </div>
+                            </li>
                             <li class="form-line form-line-column form-col-2" data-type="control_phone" id="id_27">
                                 <label class="form-label form-label-top" id="label_27" for="input_27_full"> Aadhar Card </label>
                                 <div id="cid_27" class="form-input-wide" data-layout="half">
@@ -140,12 +144,6 @@
                                 <label class="form-label form-label-top" id="label_27" for="input_27_full"> 12th marksheet </label>
                                 <div id="cid_27" class="form-input-wide" data-layout="half">
                                     <img height=100px; weidth=100px; alt="image" src='../<?php echo $row['Twelve_Marksheet'] ?>' >
-                                </div>
-                            </li>
-                            <li class="form-line" data-type="control_address" id="id_23">
-                                <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23_addr_line1"> Address </label>
-                                <div id="cid_23" class="form-input-wide" data-layout="full">
-                                    <input type="text" id="address" name="address" class="form-textbox form-address-line" value="<?php echo $row['Address'];?>" data-component="address_line_1"/>
                                 </div>
                             </li>
                             <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_20">

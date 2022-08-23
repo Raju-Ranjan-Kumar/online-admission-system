@@ -15,15 +15,6 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet"/>
-        <style>
-            .container{width:100%; padding:10px 15px}
-            .heading1{padding:10px 0px; border-bottom:2px solid black;}
-            .table{width:90%; margin:5px auto;}
-            table, th, td{padding:10px 7px; border-bottom:1px solid black; border-collapse:collapse;}
-            .bxs-happy{color:green; font-size:25px; font-weight:bold; margin-left:12px;}
-            .bxs-sad{color:yellow; font-size:25px; font-weight:bold; margin-left:12px;}
-            .bxs-angry{color:red; font-size:25px; font-weight:bold; margin-left:12px;}
-        </style>
     </head>
 <body>
     <?php 
@@ -55,8 +46,7 @@
                         <tbody>
                             <?php
                                 if(!isset($_SESSION['EMAIL']))
-                                // header('location:login.php');
-                                "<script> window.location.href='login.php'</script>";
+                                header('location:login.php');
                                 
                                 //Total Applications which is approved $ not approved $ reject
                                 $query = "SELECT * FROM registration WHERE isApproved=0 || isApproved=1 || isApproved=-1";

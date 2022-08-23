@@ -42,18 +42,18 @@
                 $con_pas = password_hash($con_password,PASSWORD_DEFAULT);
 
                 if($new_password === $con_password){
-                    $update = "update signup set Password='$pass' where Token='$token'";
+                    $update = "UPDATE signup SET Password='$pass' WHERE Token='$token'";
                     $query = mysqli_query($con,$update);
 
                     if($query){
                         echo "<script> alert('You have sucessfully reset your password!')</script>";
                         header('location:login.php');
                     }else{
-                        echo "<script> alert('Your password not updated!')</script>";
+                        echo "<script> alert('Something went wrong, please try again?')</script>";
                         header('location:forgot_password.php');
                     }  
                 }else{
-                    echo "<script> alert('password and Confirm Password is not match!')</script>";
+                    echo "<script> alert('Password and Confirm Password is not match!')</script>";
                 }
             }else{
                 echo "<script> alert('Token not found!')</script>";
@@ -74,7 +74,7 @@
                 <button type="submit" name="submit" class="btn btn-success btn-lg btn-block signup-btn">Forgot Password</button>
             </div>
         </form>
-        <div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
+        <div class="text-center">If you don't want to forgot your password? <a href="login.php">Login here</a></div>
     </div>
 </body>
 </html>

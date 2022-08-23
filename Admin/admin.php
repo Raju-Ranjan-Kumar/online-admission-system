@@ -70,7 +70,7 @@
                         <div  class="card">
                             <div class="data">
                                 <h1 id="data-count" ><?php echo approved($con);  ?></h1>
-                                <i id="card-icon" class='bx bxs-user-check'></i>
+                                <i style="color:green; font-size:38px;" class='bx bxs-user-check'></i>
                             </div>
                             <p class="user-info"> Approved Application </p>
                         </div>
@@ -78,7 +78,7 @@
                         <div  class="card">
                             <div class="data">
                                 <h1 id="data-count"><?php echo waiting($con); ?></h1>
-                                <i id="card-icon" class='bx bxs-user-minus'></i>
+                                <i style="color:yellow; font-size:38px;" class='bx bxs-user-minus'></i>
                             </div>
                             <p class="user-info">Wating Application</p>
                         </div>
@@ -86,7 +86,7 @@
                         <div  class="card">
                             <div class="data">
                                 <h1 id="data-count"><?php echo reject($con); ?></h1>
-                                <i id="card-icon" class='bx bxs-user-x'></i>
+                                <i style="color:red; font-size:38px;" class='bx bxs-user-x'></i>
                             </div>
                             <p class="user-info">Reject Application</p>
                         </div>
@@ -110,5 +110,6 @@
                 </div>
             </div>
         </section>
+        <?php include('footer.php'); ?>
     </body>
 </html>

@@ -16,77 +16,75 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
         <link href="css/style.css" rel="stylesheet"/>
-        <style>
-            .container{width:100%; padding:10px 15px}
-            .heading1{padding:10px 0px; border-bottom:2px solid black;}
-            .table{width:90%; margin:5px auto;}
-            table, th, td{padding:10px 7px; border-bottom:1px solid black; border-collapse:collapse; }
-        </style>
     </head>
-<body>
-    <?php 
-        session_start();
-        include('../db_con.php');
-        include('header.php'); 
+    <body>
+        <?php 
+            session_start();
+            include('../db_con.php');
+            include('header.php'); 
 
-        // Delete record based on id
-        if (isset($_GET['id'])) {
-            $id = $_GET['id'];
-            $query = "DELETE FROM registration WHERE Id='$id'";
-            $result = mysqli_query($con,$query);
-        }
-    ?>
-    <section>
-        <div class="containar">
-            <?php include('sidebar.php'); ?>
+            // Delete record based on id
+            if (isset($_GET['id'])) {
+                $id = $_GET['id'];
+                $query = "DELETE FROM registration WHERE Id='$id'";
+                $result = mysqli_query($con,$query);
+            }
+        ?>
+        <section>
+            <div class="containar">
+                <?php include('sidebar.php'); ?>
 
-            <div class="admin-home">
-                <div class="container">
-                    <h1 style="text-align:center;"class="heading1">Reject Applications</h1>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Id</th>
-                                <th>Name</th>
-                                <th>Father_Name</th>
-                                <th>Email</th>
-                                <th>DOB</th>
-                                <th>Gender</th>
-                                <th>Course</th>
-                                <th>Address</th>
-                                <th>Operation</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php
-                                if(!isset($_SESSION['EMAIL']))
-                                // header('location:login.php');
-                                "<script> window.location.href='login.php'</script>";
-                                
-                                //Total Applications which is reject.
-                                $query = "SELECT * FROM registration WHERE isApproved=-1";
-                                $result = mysqli_query($con,$query);
-                                while($row = mysqli_fetch_assoc($result)){
-                            ?>
-                            <tr>
-                                <td> <?php echo $row['Id'];?></td>
-                                <td> <?php echo $row['Name'];?></td>
-                                <td> <?php echo $row['Father_Name'];?></td>
-                                <td> <?php echo $row['Email'];?></td>
-                                <td> <?php echo $row['DOB'];?></td>
-                                <td> <?php echo $row['Gender'];?></td>
-                                <td> <?php echo $row['Course'];?></td>
-                                <td> <?php echo $row['Address'];?></td>
-                                <td> <a href="?id=<?php echo $row['Id']; ?>" class="btn btn-danger">Delete</a></td>
-                            </tr>
-                            <?php
-                               }
-                            ?>
-                        </tbody>
-                    </table>
+                <div class="admin-home">
+                    <div class="container">
+                        <h1 style="text-align:center;"class="heading1">Reject Applications</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Father_Name</th>
+                                    <th>Email</th>
+                                    <th>DOB</th>
+                                    <th>Gender</th>
+                                    <th>Course</th>
+                                    <th>Address</th>
+                                    <th>Status</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                    if(!isset($_SESSION['EMAIL']))
+                                    header('location:login.php');
+                                    
+                                    //Total Applications which is reject.
+                                    $query = "SELECT * FROM registration WHERE isApproved=-1";
+                                    $result = mysqli_query($con,$query);
+                                    while($row = mysqli_fetch_assoc($result)){
+                                ?>
+                                <tr>
+                                    <td> <?php echo $row['Id'];?></td>
+                                    <td> <?php echo $row['Name'];?></td>
+                                    <td> <?php echo $row['Father_Name'];?></td>
+                                    <td> <?php echo $row['Email'];?></td>
+                                    <td> <?php echo $row['DOB'];?></td>
+                                    <td> <?php echo $row['Gender'];?></td>
+                                    <td> <?php echo $row['Course'];?></td>
+                                    <td> <?php echo $row['Address'];?></td>
+                                    <?php if($row['isApproved']==-1){ ?>
+                                        <td> <a href='view.php?id=<?php echo $row['Id'];?>'><i class='bx bxs-angry'></i></a></td>
+                                        <?php }
+                                    ?>
+                                    <td> <a href="?id=<?php echo $row['Id']; ?>" class="btn btn-danger">Delete</a></td>
+                                </tr>
+                                <?php
+                                  }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</body>
+        </section>
+    </body>
 </html>

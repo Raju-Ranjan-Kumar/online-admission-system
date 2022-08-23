@@ -47,7 +47,7 @@
                 $mail->Host       = 'smtp.gmail.com';                      
                 $mail->SMTPAuth   = true;                                  
                 $mail->Username   = 'babansingh121484@gmail.com';           
-                $mail->Password   = '8873376263';                          
+                $mail->Password   = '6202975094';                          
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
                 $mail->Port       = 465;                                    
 
@@ -98,7 +98,7 @@
                 <button type="submit" name="submit" class="btn btn-success btn-lg btn-block signup-btn">Send Mail</button>
             </div>
         </form>
-        <div class="text-center">No forgot your password? <a href="login.php">Login here</a></div>
+        <div class="text-center">If you don't want to forgot your password? <a href="login.php">Login here</a></div>
     </div>
 </body>
 </html>
