@@ -55,118 +55,96 @@
         }
       } 
     ?>
-  <form class="jotform-form" action="" method="post" name="" id="220822118029448" accept-charset="utf-8">
-    <div role="main" class="form-all">
-      <ul class="form-section page-section">
-        <li id="cid_1" class="form-input-wide" data-type="control_head">
-          <div class="form-header-group  header-large">
-            <div class="header-text httal htvam">
+    <form class="jotform-form" action="" method="post" name="" id="220822118029448" accept-charset="utf-8">
+      <div role="main" class="form-all">
+        <ul class="form-section page-section">
+          <li id="cid_1" class="form-input-wide" data-type="control_head">
+            <div class="form-header-group  header-large">
               <h1 id="header_1" class="form-header" data-component="header"> Update your record </h1>
             </div>
-          </div>
-        </li>
-        <li class="form-line form-line-column" data-type="control_fullname" id="id_4">
-          <label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Student Name </label>
-          <div id="cid_4" class="form-input-wide" data-layout="half">
-            <div data-wrapper-react="true" class="extended">
+          </li>
+          <li class="form-line form-line-column" data-type="control_fullname" id="id_4">
+            <label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Student Name </label>
+            <div id="cid_4" class="form-input-wide" data-layout="half">
               <input type="text" id="name" name="name" class="form-textbox" autoComplete="section-input_4 given-name" size="10" value="<?php echo $row['Name'];?>" placeholder="Your Name" data-component="first" aria-labelledby="label_4 sublabel_4_first" />
             </div>
-          </div>
-        </li>
-        <li class="form-line form-line-column" data-type="control_fullname" id="id_4">
-          <label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Student father Name </label>
-          <div id="cid_4" class="form-input-wide" data-layout="half">
-            <input type="text" id="father" name="father" class="form-textbox" autoComplete="section-input_4 given-name" size="10" value="<?php echo $row['Father_Name'];?>" placeholder="Your father Name" data-component="first" aria-labelledby="label_4 sublabel_4_first" />
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-1" data-type="control_email" id="id_6">
-          <label class="form-label form-label-top" id="label_6" for="input_6"> Student E-mail </label>
-          <div id="cid_6" class="form-input-wide" data-layout="half">
-            <input type="email" id="email" name="email" class="form-textbox validate[Email]" style="width:310px" size="310" value="<?php echo $row['Email'];?>" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" data-type="control_date" id="id_24">
-          <label class="form-label form-label-top" id="label_24" for="input_24_full"> Birth Date </label>
-          <div id="cid_24" class="form-input-wide" data-layout="half">
-              <input type="date" id="dob" name="dob" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" value="<?php echo $row['DOB'];?>" style="width:310px" data-masked="true" aria-labelledby="label_24" />
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_3">
-          <label class="form-label form-label-top" id="label_3" for="input_3"> Gender </label>
-          <div id="cid_3" class="form-input-wide" data-layout="half">
-            <input type="text" id="gender" name="gender" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" value="<?php echo $row['Gender'];?>" style="width:310px" data-masked="true" aria-labelledby="label_24" />
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" data-type="control_course" id="id_3">
-          <label class="form-label form-label-top" id="label_3" for="input_3"> Course </label>
-          <div id="cid_3" class="form-input-wide" data-layout="half">
-            <input type="text" id="course" name="course" class="mask-phone-number form-textbox validate[Fill Mask]" value="<?php echo $row['Course'];?>" style="width:310px" data-masked="true" aria-labelledby="label_24" />
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" data-type="control_phone" id="id_27">
-          <label class="form-label form-label-top" id="label_27" for="input_27_full"> Aadhar Card </label>
-          <div id="cid_27" class="form-input-wide" data-layout="half">
-            <span class="form-sub-label-container" style="vertical-align:top">
+          </li>
+          <li class="form-line form-line-column" data-type="control_fullname" id="id_4">
+            <label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Student father Name </label>
+            <div id="cid_4" class="form-input-wide" data-layout="half">
+              <input type="text" id="father" name="father" class="form-textbox" autoComplete="section-input_4 given-name" size="10" value="<?php echo $row['Father_Name'];?>" placeholder="Your father Name" data-component="first" aria-labelledby="label_4 sublabel_4_first" />
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-1" data-type="control_email" id="id_6">
+            <label class="form-label form-label-top" id="label_6" for="input_6"> Student E-mail </label>
+            <div id="cid_6" class="form-input-wide" data-layout="half">
+              <input type="email" id="email" name="email" class="form-textbox validate[Email]" style="width:310px" size="310" value="<?php echo $row['Email'];?>" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" data-type="control_date" id="id_24">
+            <label class="form-label form-label-top" id="label_24" for="input_24_full"> Birth Date </label>
+            <div id="cid_24" class="form-input-wide" data-layout="half">
+                <input type="date" id="dob" name="dob" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" value="<?php echo $row['DOB'];?>" style="width:310px" data-masked="true" aria-labelledby="label_24" />
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_3">
+            <label class="form-label form-label-top" id="label_3" for="input_3"> Gender </label>
+            <div id="cid_3" class="form-input-wide" data-layout="half">
+              <input type="text" id="gender" name="gender" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" value="<?php echo $row['Gender'];?>" style="width:310px" data-masked="true" aria-labelledby="label_24" />
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" data-type="control_course" id="id_3">
+            <label class="form-label form-label-top" id="label_3" for="input_3"> Course </label>
+            <div id="cid_3" class="form-input-wide" data-layout="half">
+              <input type="text" id="course" name="course" class="mask-phone-number form-textbox validate[Fill Mask]" value="<?php echo $row['Course'];?>" style="width:310px" data-masked="true" aria-labelledby="label_24" />
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" data-type="control_phone" id="id_27">
+            <label class="form-label form-label-top" id="label_27" for="input_27_full"> Aadhar Card </label>
+            <div id="cid_27" class="form-input-wide" data-layout="half">
               <input type="file" id="aadhar" name="aadhar" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" data-component="phone" aria-labelledby="label_27" />
-              <span id="u_ad" class="error"></span>
-              <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
-            </span>
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" data-type="control_pan" id="id_27">
-          <label class="form-label form-label-top" id="label_27" for="input_27_full"> Pan Card </label>
-          <div id="cid_27" class="form-input-wide" data-layout="half">
-            <span class="form-sub-label-container" style="vertical-align:top">
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" data-type="control_pan" id="id_27">
+            <label class="form-label form-label-top" id="label_27" for="input_27_full"> Pan Card </label>
+            <div id="cid_27" class="form-input-wide" data-layout="half">
               <input type="file" id="pan" name="pan" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" data-component="phone" aria-labelledby="label_27" />
-              <span id="u_pan" class="error"></span>
-              <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
-            </span>
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" id="id_27">
-          <label class="form-label form-label-top" id="label_27" for="input_27_full"> 10th marksheet </label>
-          <div id="cid_27" class="form-input-wide" data-layout="half">
-            <span class="form-sub-label-container" style="vertical-align:top">
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" id="id_27">
+            <label class="form-label form-label-top" id="label_27" for="input_27_full"> 10th marksheet </label>
+            <div id="cid_27" class="form-input-wide" data-layout="half">
               <input type="file" id="tenth" name="tenth" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" aria-labelledby="label_27" />
-              <span id="u_tenth" class="error"></span>
-              <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
-            </span>
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" id="id_27">
-          <label class="form-label form-label-top" id="label_27" for="input_27_full"> 12th marksheet </label>
-          <div id="cid_27" class="form-input-wide" data-layout="half">
-            <span class="form-sub-label-container" style="vertical-align:top">
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" id="id_27">
+            <label class="form-label form-label-top" id="label_27" for="input_27_full"> 12th marksheet </label>
+            <div id="cid_27" class="form-input-wide" data-layout="half">
               <input type="file" id="twelve" name="twelve" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" data-component="phone" aria-labelledby="label_27" />
-              <span id="u_twelve" class="error"></span>
-              <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
-            </span>
-          </div>
-        </li>
-        <li class="form-line" data-type="control_address" id="id_23">
-          <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23_addr_line1"> Address </label>
-          <div id="cid_23" class="form-input-wide" data-layout="full">
-            <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="text" id="address" name="address" class="form-textbox form-address-line"autoComplete="section-input_23 address-line1" value="<?php echo $row['Address'];?>" data-component="address_line_1" aria-labelledby="label_23 sublabel_23_addr_line1" required="" />
-            </span>
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_20">
-          <div id="cid_20" class="form-input-wide" data-layout="full">
-            <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
-              <button id="input_20" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" name="submit"> Update Data </button>
             </div>
-          </div>
-        </li>
-        <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_19">
-          <div id="cid_19" class="form-input-wide" data-layout="full">
-            <div data-align="right" class="form-buttons-wrapper form-buttons-right   jsTest-button-wrapperField">
-              <button id="input_19" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button"> Clear Fields </button>
+          </li>
+          <li class="form-line" data-type="control_address" id="id_23">
+            <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23_addr_line1"> Address </label>
+            <div id="cid_23" class="form-input-wide" data-layout="full">
+                <input type="text" id="address" name="address" class="form-textbox form-address-line"autoComplete="section-input_23 address-line1" value="<?php echo $row['Address'];?>" data-component="address_line_1" aria-labelledby="label_23 sublabel_23_addr_line1" required="" />
             </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </form>
+          </li>
+          <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_20">
+            <div id="cid_20" class="form-input-wide" data-layout="full">
+              <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
+                <button id="input_20" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" name="submit"> Update Data </button>
+              </div>
+            </div>
+          </li>
+          <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_19">
+            <div id="cid_19" class="form-input-wide" data-layout="full">
+              <div data-align="right" class="form-buttons-wrapper form-buttons-right   jsTest-button-wrapperField">
+                <button id="input_19" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button"> Clear Fields </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </form>
   </body>
  </html>
