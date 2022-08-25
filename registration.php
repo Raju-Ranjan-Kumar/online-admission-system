@@ -46,42 +46,6 @@
     ?>
     <?php
         error_reporting(0);
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\Exception;
-        use PHPMailer\PHPMailer\SMTP;
-
-        require 'PHPMailer/src/Exception.php';
-        require 'PHPMailer/src/PHPMailer.php';
-        require 'PHPMailer/src/SMTP.php';
-
-        function send_mail($email,$subject,$message){
-            $mail = new PHPMailer(true);
-            try {
-                $mail->SMTPDebug = SMTP::DEBUG_SERVER;                         
-                $mail->isSMTP();                                           
-                $mail->Host       = 'smtp.gmail.com';                      
-                $mail->SMTPAuth   = true;                                  
-                $mail->Username   = 'babansingh121484@gmail.com';           
-                $mail->Password   = '6202975094';                          
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
-                $mail->Port       = 465;                                    
-
-                $mail->setFrom('babansingh121484@gmail.com', 'Raju Ranjan Kumar');   
-                $mail->addAddress($email);                                         
-                $mail->addReplyTo('babansingh121484@gmail.com', 'Controller');       
-
-                $mail->isHTML(true);                                          
-                $mail->Subject = $subject;
-                $mail->Body    = $message;
-                $mail->AltBody = '';
-
-                $mail->send();
-                  return true;
-            }catch(Exception $e) {
-                return false;
-            }
-        }
-
         if(isset($_POST['submit'])){
             $img = $_FILES['u-image'];
             $name = $_POST['name'];
@@ -134,16 +98,17 @@
 
                       $sql = "INSERT INTO registration(Id,Name,Father_Name,Email,DOB,Gender,Course,Aadhar,Pan_Card,Tenth_Marksheet,Twelve_Marksheet,Address,Image)  VALUES ('$id', '$name','$f_name','$email','$dob','$gender','$course','$target_file1','$target_file2','$target_file3','$target_file4','$address','$target_file5')";
                       $query = mysqli_query($con,$sql);
+                      header('location:Payment/razorpay.php');
       
-                      if($query){
-                        $otp = rand(1000,9999);
-                        mysqli_query($con,"UPDATE register SET Otp='$otp' WHERE Email='$email'");
-                        $message = "Your otp verification code is ".$otp;
-                        $_SESSION['EMAIL']= $email;
-                        send_mail($email,"OTP Verification",$message);
-                        // header('location:otp_varification.php');
-                        echo '<script type="text/javascript"> location.replace("otp_varification.php"); </script>';
-                      }
+                      // if($query){
+                      //   $otp = rand(1000,9999);
+                      //   mysqli_query($con,"UPDATE register SET Otp='$otp' WHERE Email='$email'");
+                      //   $message = "Your otp verification code is ".$otp;
+                      //   $_SESSION['EMAIL']= $email;
+                      //   send_mail($email,"OTP Verification",$message);
+                      //   header('location:otp_varification.php');
+                      //   // echo '<script type="text/javascript"> location.replace("otp_varification.php"); </script>';
+                      // }
                     }
                 }else{
                   die("This is not an image..!");

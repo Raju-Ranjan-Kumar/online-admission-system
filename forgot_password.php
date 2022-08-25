@@ -42,7 +42,7 @@
                 $con_pas = password_hash($con_password,PASSWORD_DEFAULT);
 
                 if($new_password === $con_password){
-                    $update = "UPDATE signup SET Password='$pass' WHERE Token='$token'";
+                    $update = "UPDATE register SET Password='$pass' WHERE Token='$token'";
                     $query = mysqli_query($con,$update);
 
                     if($query){
