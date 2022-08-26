@@ -30,7 +30,7 @@
         <h5 class="text-center mt-5 mb-3">Complete Your Payment</h5>
         <form class="col-lg-2 m-auto">
             <div class="mb-3">
-                <input type="text" class="form-control" id="userid" name="userid" value="<?php echo $row['Id'];?>">
+                <input type="text" class="form-control" id="userid" name="user_id" value="<?php echo $row['Id'];?>">
             </div>
             <div class="mb-3">
                 <input type="text" class="form-control" id="amt" name="gtotalVal" value="100">

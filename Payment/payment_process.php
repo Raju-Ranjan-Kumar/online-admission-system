@@ -4,19 +4,20 @@
   
     //if the user only click on pay now button
     if(isset($_POST['amt']) && isset($_POST['userid'])){
+        $id = $_POST['userid'];
         $amt = $_POST['amt'];
+        $added_on = date('y-m-d h:i:s');
 
-        mysqli_query($con,"INSERT INTO `order_manager`(`Full_Name`, `Phone_Number`, `Address`, `Amount`, `Pay_Mode`, `Payment_Status`, `Added_On`)
-            VALUES ('$name','$phone','$address','$amt','$pay_mode','$payment_status','$added_on')");
+        $qry = "INSERT INTO `payment`(`Id`, `Amount, `Payment_Status`, `Added_On`) VALUES ('$id','$amt','inActive','$added_on')";
 
-        $_SESSION['OID'] = mysqli_insert_id($con);
+        mysqli_query($con,$qry);
     }
 
     //if the user payment successful
-    if(isset($_POST ['payment_id']) && isset($_SESSION['OID'])){
+    if(isset($_POST['payment_id']) && isset($_POST['userid'])){
         $payment_id = $_POST['payment_id'];
 
-        $qry1 = "UPDATE `register` SET `Payment_Status`='Complete', `Payment_Id`='$payment_id' WHERE Order_Id='".$_SESSION['OID']."'";
+        $qry1 = "UPDATE `payment` SET `Payment_Status`='Complete', `Payment_Id`='$payment_id' WHERE Id='".$_POST['userid']."'";
 
         mysqli_query($con,$qry1);
     }
