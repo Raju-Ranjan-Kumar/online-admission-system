@@ -99,16 +99,6 @@
                       $sql = "INSERT INTO registration(Id,Name,Father_Name,Email,DOB,Gender,Course,Aadhar,Pan_Card,Tenth_Marksheet,Twelve_Marksheet,Address,Image)  VALUES ('$id', '$name','$f_name','$email','$dob','$gender','$course','$target_file1','$target_file2','$target_file3','$target_file4','$address','$target_file5')";
                       $query = mysqli_query($con,$sql);
                       header('location:Payment/razorpay.php');
-      
-                      // if($query){
-                      //   $otp = rand(1000,9999);
-                      //   mysqli_query($con,"UPDATE register SET Otp='$otp' WHERE Email='$email'");
-                      //   $message = "Your otp verification code is ".$otp;
-                      //   $_SESSION['EMAIL']= $email;
-                      //   send_mail($email,"OTP Verification",$message);
-                      //   header('location:otp_varification.php');
-                      //   // echo '<script type="text/javascript"> location.replace("otp_varification.php"); </script>';
-                      // }
                     }
                 }else{
                   die("This is not an image..!");

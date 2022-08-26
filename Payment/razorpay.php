@@ -11,7 +11,14 @@
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <title>Payment</title>
     <style>
-        body{background-color:aliceblue;}
+        *{padding:0; margin:0;}
+        body {background:#eee;}
+        .container{height:100vh; display:flex; justify-content:center; align-items:center; text-align:center;}
+        .card {width:350px; padding:30px; border-radius:20px; background:#fff; border:none; position:relative;}
+        .heading{font-size:22px; text-transform:uppercase;}
+        .mobile-text {color:#989696b8; font-size:18px;}
+        .resend{padding-top:30px}
+        .cursor{cursor:pointer; font-weight:bold; font-size:20px; color:red;}
     </style>
 </head>
 <body>
@@ -26,17 +33,19 @@
             $id = $row['Id'];
         }
     ?>
-    <div class="container ">
-        <h5 class="text-center mt-5 mb-3">Complete Your Payment</h5>
-        <form class="col-lg-2 m-auto">
-            <div class="mb-3">
-                <input type="text" class="form-control" id="userid" name="user_id" value="<?php echo $row['Id'];?>">
-            </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="amt" name="gtotalVal" value="100">
-            </div>
-            <div class="mb-3">
-                <input type="button" class="btn btn-primary form-control" id="btn" name="btn" value="Pay Now" onclick="pay_now()">
+    <div class="container">
+        <form action="" method="">
+            <div class="card">
+                <h5 class="heading">Complete Your Payment</h5><br>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Id</span>
+                    <input type="text" name="user_id" id="userid" class="form-control" value="<?php echo $row['Id'];?>" aria-label="Useremail" aria-describedby="addon-wrapping">
+                </div><br>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Rs</span>
+                    <input type="text" class="form-control" id="amt" name="gtotalVal" value="100" aria-describedby="addon-wrapping">
+                </div><br>
+                <button type="button" class="btn btn-primary" id="btn" name="btn" value="Pay Now" onclick="pay_now()">Pay Now</button>
             </div>
         </form>
     </div>
