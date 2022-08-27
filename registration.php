@@ -281,13 +281,13 @@
             let flag=1;
             
             //image
-            // if(img.value==""){
-            //   document.getElementById("image").innerHTML="*Please upload your image!";
-            //   flag= 0;
-            // }else{
-            //   document.getElementById("image").innerHTML="";
-            //   flag=1;
-            // }
+            if(img.value==""){
+              document.getElementById("image").innerHTML="*Please upload your image!";
+              flag= 0;
+            }else{
+              document.getElementById("image").innerHTML="";
+              flag=1;
+            }
             //Name section
             if(name.value==""){
               document.getElementById("u_name").innerHTML="*Please enter your Name!";
