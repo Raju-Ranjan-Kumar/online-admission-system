@@ -4,35 +4,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta property="og:description" content="Please click the link to complete this form." >
     <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1"/>
     <link rel="canonical" href="https://form.jotform.com/220822118029448" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" />
     <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5eb3b4ae85bd2e1e2966db96"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Registration Form</title>
-    <style type="text/css">
-      body{background-color:aliceblue;}
-      .text-uppercase { text-transform: capitalize !important; }
-      .masthead .masthead-avatar { width:20rem !important;}
-      .logo{height:58px; width:58px; border-radius:50px; margin-left:20px;}
-      .collapse ul li a:hover{background-color:#1abc9c; color:white; font-size:1rem; border-radius: 0.5rem;}
-      .navbar-nav {padding-left:35px !important;}
-      .btn-primary {margin-right:20px; background-color:#1abc9c; border-color:#1abc9c;}
-      @media print{
-        .form-section{display:inline!important}
-        .form-pagebreak{display:none!important}
-        .form-section-closed{height:auto!important}
-        .page-section{position:initial!important}
-      }
-      .form-all{border-radius:22px;}
-      .error{color: red; }
-      .foter{border-top:1.5px solid grey; line-height:30px;}
-      .s-icon{font-size:28px; padding-right:15px;}
-      .social-head{font-size:15px;}
-
-      .form-line {padding:7px 10px; margin:5px 2px;}
-      div.header-large { margin:0 -38px; padding:1.8em 51px;}
-    </style>
   </head>
 <body>
     <?php
@@ -130,9 +108,9 @@
     <div role="main" class="form-all">
       <ul class="form-section page-section">
         <li id="cid_1" class="form-input-wide" data-type="control_head">
-          <div class="form-header-group  header-large">
+          <div class="form-header-group  header1">
             <div class="header-text httal htvam">
-              <h1 id="header_1" class="form-header" data-component="header"> Registration form </h1>
+              <h1 id="header_1" class="reg-heading" data-component="header"> Registration form </h1>
               <div id="subHeader_1" class="form-subHeader"> Fill out the form carefully</div>
             </div>
           </div>
@@ -141,7 +119,7 @@
           <label class="form-label form-label-top" id="label_27" for="input_27_full"> Student Image </label>
           <div id="cid_27" class="form-input-wide" data-layout="half">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="file" id="u-image" name="u-image" class="form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" aria-labelledby="label_27" />
+              <input type="file" id="u-image" name="u-image" class="form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" required="required"/>
               <span id="image" class="error"></span>
               <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
             </span>
@@ -150,21 +128,21 @@
         <li class="form-line form-line-column form-col-2" data-type="control_fullname" id="id_4">
           <label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Student Name </label>
           <div id="cid_4" class="form-input-wide" data-layout="half">
-            <input type="text" id="name" name="name" class="form-textbox" autoComplete="section-input_4 given-name" size="10" placeholder="Your Name" data-component="first" aria-labelledby="label_4 sublabel_4_first" />
+            <input type="text" id="name" name="name" class="form-textbox" size="10" placeholder="Your Name" required="required"/>
             <span id="u_name" class="error"></span>
           </div>
         </li>
         <li class="form-line" data-type="control_fullname" id="id_4">
           <label class="form-label form-label-top form-label-extended form-label-auto" id="label_4" for="first_4"> Student father Name </label>
           <div id="cid_4" class="form-input-wide" data-layout="full">
-            <input type="text" id="father" name="father" class="form-textbox" autoComplete="section-input_4 given-name" size="10" placeholder="Your father Name" data-component="first" aria-labelledby="label_4 sublabel_4_first" />
+            <input type="text" id="father" name="father" class="form-textbox" size="10" placeholder="Your father Name" required="required"/>
             <span id="father_name" class="error"></span>
           </div>
         </li>
         <li class="form-line form-line-column form-col-1" data-type="control_email" id="id_6">
           <label class="form-label form-label-top" id="label_6" for="input_6"> Student E-mail </label>
           <div id="cid_6" class="form-input-wide" data-layout="half">
-            <input type="email" id="email" name="email" class="form-textbox validate[Email]" style="width:310px" size="310" placeholder="ex: myname@example.com" data-component="email" aria-labelledby="label_6 sublabel_input_6" />
+            <input type="email" id="email" name="email" class="form-textbox validate[Email]" style="width:310px" size="310" placeholder="ex: myname@example.com" required="required"/>
             <span id="u_email" class="error"></span>
           </div>
         </li>
@@ -172,7 +150,7 @@
           <label class="form-label form-label-top" id="label_27" for="input_27_full"> Birth Date </label>
           <div id="cid_27" class="form-input-wide" data-layout="half">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="date" id="dob" name="dob" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" data-component="phone" aria-labelledby="label_27" />
+              <input type="date" id="dob" name="dob" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" required="required"/>
               <span id="u_dob" class="error"></span>
               <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
             </span>
@@ -181,7 +159,7 @@
         <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_3">
           <label class="form-label form-label-top" id="label_3" for="input_3"> Gender </label>
           <div id="cid_3" class="form-input-wide" data-layout="half">
-            <select class="form-dropdown" id="gender" name="gender" style="width:310px" data-component="dropdown">
+            <select class="form-dropdown" id="gender" name="gender" style="width:310px" data-component="dropdown" required="required">
               <option value="">Select Gender</option>
               <option value="Male"> Male </option>
               <option value="Female"> Female </option>
@@ -192,7 +170,7 @@
         <li class="form-line form-line-column form-col-2" data-type="control_dropdown" id="id_3">
           <label class="form-label form-label-top" id="label_3" for="input_3"> Course </label>
           <div id="cid_3" class="form-input-wide" data-layout="half">
-            <select class="form-dropdown" id="course" name="course" style="width:310px" data-component="dropdown">
+            <select class="form-dropdown" id="course" name="course" style="width:310px" data-component="dropdown" required="required">
               <option value="">Select Course</option>
               <option value="BCA"> BCA </option>
               <option value="MCA"> MCA </option>
@@ -213,7 +191,7 @@
           <label class="form-label form-label-top" id="label_27" for="input_27_full"> Aadhar Card </label>
           <div id="cid_27" class="form-input-wide" data-layout="half">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="file" id="aadhar" name="aadhar" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" aria-labelledby="label_27" />
+              <input type="file" id="aadhar" name="aadhar" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" required="required"/>
               <span id="u_ad" class="error"></span>
               <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
             </span>
@@ -223,9 +201,9 @@
           <label class="form-label form-label-top" id="label_27" for="input_27_full"> Pan Card </label>
           <div id="cid_27" class="form-input-wide" data-layout="half">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="file" id="pan" name="pan" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" aria-labelledby="label_27" />
+              <input type="file" id="pan" name="pan" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" required="required"/>
               <span id="u_pan" class="error"></span>
-              <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
+              <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false"> </label>
             </span>
           </div>
         </li>
@@ -233,7 +211,7 @@
           <label class="form-label form-label-top" id="label_27" for="input_27_full"> 10th marksheet </label>
           <div id="cid_27" class="form-input-wide" data-layout="half">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="file" id="tenth" name="tenth" class="mask-phone-number form-textbox validate[Fill Mask]" autoComplete="section-input_27 tel-national" style="width:310px" data-masked="true" aria-labelledby="label_27" />
+              <input type="file" id="tenth" name="tenth" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" required="required"/>
               <span id="u_tenth" class="error"></span>
               <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
             </span>
@@ -243,7 +221,7 @@
           <label class="form-label form-label-top" id="label_27" for="input_27_full"> 12th marksheet </label>
           <div id="cid_27" class="form-input-wide" data-layout="half">
             <span class="form-sub-label-container" style="vertical-align:top">
-              <input type="file" id="twelve" name="twelve" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" data-masked="true" data-component="phone" aria-labelledby="label_27" />
+              <input type="file" id="twelve" name="twelve" class="mask-phone-number form-textbox validate[Fill Mask]" style="width:310px" required="required"/>
               <span id="u_twelve" class="error"></span>
               <label class="form-sub-label is-empty" for="input_27_full" id="sublabel_27_masked" style="min-height:13px" aria-hidden="false">  </label>
             </span>
@@ -252,21 +230,21 @@
         <li class="form-line mb-2" data-type="control_address" id="id_23">
           <label class="form-label form-label-top form-label-auto" id="label_23" for="input_23_addr_line1"> Address </label>
           <div id="cid_23" class="form-input-wide" data-layout="full">
-            <input type="text" id="address" name="address" class="form-textbox form-address-line" data-component="address_line_1" require/>
+            <input type="text" id="address" name="address" class="form-textbox form-address-line" required="required"/>
             <span id="u_addr" class="error"></span>
           </div>
         </li>
         <li class="form-line form-line-column form-col-1" data-type="control_button" id="id_20">
           <div id="cid_20" class="form-input-wide" data-layout="full">
-            <div data-align="left" class="form-buttons-wrapper form-buttons-left   jsTest-button-wrapperField">
-              <button id="input_20" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" name="submit"> Submit Data </button>
+            <div data-align="left" class="form-buttons-wrapper form-buttons-left jsTest-button-wrapperField">
+              <button id="input_20" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" name="submit"> Submit Data </button>
             </div>
           </div>
         </li>
         <li class="form-line form-line-column form-col-2" data-type="control_button" id="id_19">
           <div id="cid_19" class="form-input-wide" data-layout="full">
-            <div data-align="right" class="form-buttons-wrapper form-buttons-right   jsTest-button-wrapperField">
-              <button id="input_19" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button"> Clear Fields </button>
+            <div data-align="right" class="form-buttons-wrapper form-buttons-right jsTest-button-wrapperField">
+              <button id="input_19" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField"> Clear Fields </button>
             </div>
           </div>
         </li>
@@ -303,13 +281,13 @@
             let flag=1;
             
             //image
-            if(img.value==""){
-              document.getElementById("image").innerHTML="*Please upload your image!";
-              flag= 0;
-            }else{
-              document.getElementById("image").innerHTML="";
-              flag=1;
-            }
+            // if(img.value==""){
+            //   document.getElementById("image").innerHTML="*Please upload your image!";
+            //   flag= 0;
+            // }else{
+            //   document.getElementById("image").innerHTML="";
+            //   flag=1;
+            // }
             //Name section
             if(name.value==""){
               document.getElementById("u_name").innerHTML="*Please enter your Name!";

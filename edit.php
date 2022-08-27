@@ -8,11 +8,8 @@
     <meta name="HandheldFriendly" content="true" />
     <style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
     <link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5eb3b4ae85bd2e1e2966db96"/>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Update Record</title>
-    <style>
-        .form-all{border-radius:22px;}
-        .header-large .form-header {text-align:center; text-decoration-line: underline;}
-    </style>
   </head>
 <body>
     <?php

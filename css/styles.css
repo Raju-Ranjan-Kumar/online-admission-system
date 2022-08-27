@@ -1,0 +1,68 @@
+/* edit.php css */
+.form-all{border-radius:22px;}
+.header-large .form-header {text-align:center; text-decoration-line: underline;}
+
+/* forgot_password.php css */
+body {background:#dfe7e9; font-family:'Roboto', sans-serif;}
+.form-control {font-size:16px;transition: all 0.4s; box-shadow:none;}
+.form-control:focus {border-color:#5cb85c;}
+.form-control, .btn {border-radius:50px; outline:none !important;}
+.signup-form {width:480px; margin:0 auto; padding:30px 0; }
+.signup-form form {border-radius:15px; margin-bottom:20px; background:#fff; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); padding:30px;}
+.signup-form h2{text-align:center; font-size:28px;}
+.signup-form .form-group {margin-bottom:20px;}
+.signup-btn{text-align:center; border-color:#5cb85c; transition:all 0.4s;}
+.signup-btn:hover{background:#5cb85c; opacity:0.8;}
+
+/* id_card.php css */
+.container1{width:35%; background-color:aliceblue; margin:auto; border-radius:10px;}
+.clg-heading{width:100%; background-size:cover; border-radius:5px;}
+.container2{display:flex; padding-left:20px;}
+.takeing-arg{width:65%; padding:17px 0px;}
+.inpt{height:26px; border:none; outline:none; border-radius:10px; }
+.image{width:35%; padding-top:18px; padding-right:9px !important;}
+.photo{height:150px; width:140px;}
+.location{width:100%; background-color:cornflowerblue; border-bottom-left-radius:10px; border-bottom-right-radius:10px; line-height:6vh; text-align:center;}
+.sign{width:140px; padding-left:7px;}
+
+/* otp_varification.php */
+*{padding:0; margin:0;}
+.container{display:flex; justify-content:center; align-items:center; text-align:center;}
+.card {width:350px; padding:25px; border-radius:20px; background:#fff; border:none; position:relative;}
+.heading{font-size:25px; padding:15px; text-transform:uppercase;}
+.mobile-text {color:#989696b8; font-size:18px;}
+.resend{padding-top:30px}
+.cursor{cursor:pointer; font-weight:bold; font-size:20px; color:red;}
+
+/* registration.php css */
+.text-uppercase { text-transform: capitalize !important; }
+.masthead .masthead-avatar { width:20rem !important;}
+.logo{height:58px; width:58px; border-radius:50px; margin-left:20px;}
+.collapse ul li a:hover{background-color:#1abc9c; color:white; font-size:1rem; border-radius: 0.5rem;}
+.navbar-nav {padding-left:35px !important;}
+.btn-primary {margin-right:20px; background-color:#1abc9c; border-color:#1abc9c;}
+.error{color: red; }
+.foter{border-top:1.5px solid grey; line-height:30px;}
+.s-icon{font-size:28px; padding-right:15px;}
+.social-head{font-size:15px;}
+.form-line {padding:7px 10px; margin:5px 2px;}
+div.header1 { margin:0 -38px; padding:1.8em 51px;}
+.reg-heading{font-size:30px;}
+
+/* send_mail_forgot.php css */
+.signup-form a {color:#5cb85c;}
+.signup-form .btn {font-size:18px; line-height:26px; font-weight:bold; text-align:center;}
+.or-seperator {margin:50px 0 15px; text-align:center; border-top:1px solid #e0e0e0;}
+.or-seperator b{padding:0 10px; width:40px; height:40px; font-size:16px; text-align:center; line-height:40px; background:#fff; display:inline-block;
+    border:1px solid #e0e0e0; border-radius:50%; position:relative; top:-22px; z-index:1;}
+
+/* Signup.php css */
+.signup-form .hint-text {color:#999; text-align:center; margin-bottom:20px;}
+.social-btn .btn {color:#fff; margin:10px 0 0 15px; font-size:15px; border-radius:50px; font-weight:normal; border:none; transition:all 0.4s;}	
+.social-btn .btn:first-child {margin-left:0;}
+.social-btn .btn:hover {opacity:0.8;}
+.social-btn .btn-primary1 {background:#507cc0;}
+.social-btn .btn-info {background:#64ccf1;}
+.social-btn .btn-danger {background:#df4930;}
+.social-btn .btn i {float:left; margin:3px 10px; font-size:20px;}
+#servicequal{height:30px; width:135px; border-radius:10px; text-align:center; display: flex; margin: auto;}

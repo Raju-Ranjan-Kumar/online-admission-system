@@ -7,16 +7,10 @@
     <!-- Bootstarp 5.2.0 CSS $ JS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
     <title>Otp varification</title>
     <style>
-        *{padding:0; margin:0;}
-        body {background:#eee;}
-        .container{height:100vh; display:flex; justify-content:center; align-items:center; text-align:center;}
-        .card {width:350px; padding:25px; border-radius:20px; background:#fff; border:none; position:relative;}
-        .heading{font-size:25px; padding:15px; text-transform:uppercase;}
-        .mobile-text {color:#989696b8; font-size:18px;}
-        .resend{padding-top:30px}
-        .cursor{cursor:pointer; font-weight:bold; font-size:20px; color:red;}
+        
     </style>
 </head>
 <body>
@@ -85,7 +79,7 @@
         }
     ?>
 
-    <div class="container">
+    <div class="container mt-5">
         <form action="" method="post">
             <div class="card">
                 <h5 class="heading">Otp Verification</h5>
