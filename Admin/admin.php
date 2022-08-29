@@ -58,93 +58,60 @@
                         }
                     ?>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-        <div class="card-body">
-            <i id="card-icon" class='bx bxs-user-plus'></i>
-            <h5 class="card-title"> <?php echo totalStudent($con); ?> </h5>
-        </div>
-        <p class="card-text"> Total Application </p>
-    </div>
-  </div>
-</div>
-
-
-                    <div class="admin-info">
-                        <div  class="card">
-                            <div class="data">
-                                <h1 id="data-count"> <?php echo totalStudent($con); ?> </h1>
-                                <i id="card-icon" class='bx bxs-user-plus'></i>
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="align-self-center mb-0 fs card-title fw-bold"> <?php echo totalStudent($con); ?> </h5>
+                                    <i id="card-icon" class='bx bxs-user-plus i-size'></i>
+                                </div>
+                                <p class="card-text text-center p-3 fw-bold"> Total Application </p>
                             </div>
-                            <p class="user-info">Total Application</p>
                         </div>
-
-                        <div  class="card">
-                            <div class="data">
-                                <h1 id="data-count" ><?php echo approved($con);  ?></h1>
-                                <i style="color:green; font-size:38px;" class='bx bxs-user-check'></i>
-                            </div>
-                            <p class="user-info"> Approved Application </p>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="align-self-center mb-0 fs card-title fw-bold"> <?php echo approved($con);  ?> </h5>
+                                    <i style="color:green; font-size:38px; padding-right:12px;" class='bx bxs-user-check'></i>
+                                </div>
+                                <p class="card-text text-center p-3 fw-bold"> Approved Application </p>
+                            </div> 
                         </div>
-
-                        <div  class="card">
-                            <div class="data">
-                                <h1 id="data-count"><?php echo waiting($con); ?></h1>
-                                <i style="color:yellow; font-size:38px;" class='bx bxs-user-minus'></i>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="align-self-center mb-0 fs card-title fw-bold"> <?php echo waiting($con); ?> </h5>
+                                    <i style="color:yellow; font-size:38px; padding-right:12px;" class='bx bxs-user-minus'></i>
+                                </div>
+                                <p class="card-text text-center p-3 fw-bold"> Waitingl Application </p>
                             </div>
-                            <p class="user-info">Wating Application</p>
                         </div>
-
-                        <div  class="card">
-                            <div class="data">
-                                <h1 id="data-count"><?php echo reject($con); ?></h1>
-                                <i style="color:red; font-size:38px;" class='bx bxs-user-x'></i>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="align-self-center mb-0 fs card-title fw-bold"> <?php echo reject($con); ?> </h5>
+                                    <i style="color:red; font-size:38px; padding-right:12px;" class='bx bxs-user-x'></i>
+                                </div>
+                                <p class="card-text text-center p-3 fw-bold"> Reject Application </p>
                             </div>
-                            <p class="user-info">Reject Application</p>
                         </div>
-
-                        <div  class="card">
-                            <div class="data">
-                                <h1 id="data-count" >0</h1> 
-                                <i id="card-icon" class='bx bxs-user-detail'></i>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="align-self-center mb-0 fs card-title fw-bold"> 0 </h5>
+                                    <i id="card-icon" class='bx bxs-user-detail i-size'></i>
+                                </div>
+                                <p class="card-text text-center p-3 fw-bold"> User Details </p>
                             </div>
-                            <p class="user-info">User Deatils</p>
                         </div>
-
-                        <div  class="card">
-                            <div class="data">
-                                <h1 id="data-count">0</h1>
-                                <i id="card-icon" class='bx bxs-user-voice'></i>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body d-flex justify-content-between">
+                                    <h5 class="align-self-center mb-0 fs card-title fw-bold"> 0 </h5>
+                                    <i id="card-icon" class='bx bxs-user-voice i-size'></i>
+                                </div>
+                                <p class="card-text text-center p-3 fw-bold"> User Action </p>
                             </div>
-                            <p class="user-info">User Action</p>
                         </div>
                     </div>
                 </div>
