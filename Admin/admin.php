@@ -58,6 +58,46 @@
                         }
                     ?>
 
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+        <div class="card-body">
+            <i id="card-icon" class='bx bxs-user-plus'></i>
+            <h5 class="card-title"> <?php echo totalStudent($con); ?> </h5>
+        </div>
+        <p class="card-text"> Total Application </p>
+    </div>
+  </div>
+</div>
+
+
                     <div class="admin-info">
                         <div  class="card">
                             <div class="data">

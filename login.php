@@ -99,7 +99,7 @@
                                     <div class="w-50 text-md-right"> <a href="send_mail_forgot.php">Forgot Password</a> </div>
                                 </div>
                             </form>
-                            <p class="text-center">Not a member? <a data-toggle="tab" href="signup.php">Sign Up</a></p>
+                            <p class="text-center">Not a member? <a data-toggle="tab" href="Signup.php">Sign Up</a></p>
                         </div>
                     </div>
                 </div>
