@@ -17,8 +17,10 @@
         <title>Dashboard</title>
     </head>
     <body>
-        <?php include('header.php'); ?>
-        <?php include('../db_con.php'); ?>
+        <?php 
+            include('../db_con.php');
+            include('header.php');
+        ?>
 
         <section>
             <div class="containar">

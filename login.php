@@ -29,10 +29,10 @@
                             setcookie('emailcookie',$email,time()+86400);
                             setcookie('passwordcookie',$password,time()+86400);
         
-                            $_SESSION['EMAIL'] = $email;
+                            $_SESSION['Admin'] = $email;
                             header('location:Admin/admin.php');
                         }else{
-                            $_SESSION['EMAIL'] = $email;
+                            $_SESSION['Admin'] = $email;
                             header('location:Admin/admin.php');
                         }
                     }else{

@@ -1,3 +1,15 @@
+<?php
+    include('../db_con.php');
+    session_start();
+
+    if(isset($_SESSION['Admin'])){
+
+    }else{
+        echo "<script> alert('Wrong Credentials..!')</script>";
+        header('Location: ../index.html');
+    }
+?>
+
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container-fluid">
         <img src="../images/su-logo.jpg" alt="logo" class="img-control img-fluid" id="su-logo">
