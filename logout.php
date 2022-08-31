@@ -1,6 +1,7 @@
 <?php
     session_start();
     unset($_SESSION['EMAIL']);
+    unset($_SESSION['Admin']);
     setcookie('emailcookie','',time()-86400);
     setcookie('passwordcookie','',time()-86400);
     header('location:index.html');
