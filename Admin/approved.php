@@ -13,13 +13,13 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS $ JS(includes Bootstrap)-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <link href="css/style.css" rel="stylesheet"/>
     </head>
 <body>
     <?php 
-        session_start();
         include('../db_con.php');
         include('header.php'); 
 
@@ -60,9 +60,6 @@
                         </thead>
                             <tbody>
                             <?php
-                                if(!isset($_SESSION['EMAIL']))
-                                header('location:login.php');
-                                
                                 //Total Applications which is approved.
                                 $query = "SELECT * FROM registration WHERE isApproved=1";
                                 $result = mysqli_query($con,$query);

@@ -36,16 +36,11 @@
         <div class="containar">
             <div class="admin-home">
                 <?php
-                    session_start();
-                    include('../db_con.php');
-                    if(!isset($_SESSION['EMAIL']))
-                    header('location:login.php');
-                    
                     // Get user details base on id.
                     $id = $_GET['id'];
                     $query = "SELECT * FROM registration WHERE Id='$id'";
-                    $result=mysqli_query($con,$query);
-                    $row=mysqli_fetch_assoc($result);
+                    $result = mysqli_query($con,$query);
+                    $row = mysqli_fetch_assoc($result);
                     
                     // Approvrd the applicication based on id.
                     if(isset($_POST['approve'])){

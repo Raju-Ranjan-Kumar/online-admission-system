@@ -5,7 +5,6 @@
     if(isset($_SESSION['Admin'])){
 
     }else{
-        echo "<script> alert('Wrong Credentials..!')</script>";
         header('Location: ../index.html');
     }
 ?>
@@ -19,9 +18,9 @@
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"> <a class="nav-link" href="admin.php">Dashboard</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="">About</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="">Admin</a> </li>
-                <li class="nav-item"> <a class="nav-link" href="">Id-generate</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="">New Application</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="">Settings</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="">Profile</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="../logout.php">Logout</a> </li>
             </ul>
             <form class="d-flex">

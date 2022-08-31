@@ -6,7 +6,12 @@
 
 /* Admin side bar css*/
 .containar{ display:flex; }
-.nav-home{ flex:2; height:100vh; background-color:deeppink;}
+.nav-home{ background-color:deeppink;}
+@media (min-width: 1200px){
+    .col-xl-2 {width: 20%;}
+}
+.nav-color{color: white;}
+.nav-link:hover {color: black;}
 .home-nav{ display:flex; flex-direction:column; align-items:flex-start;}
 .nav-home>ul{ display:flex; flex-direction:column;}
 .home-nav > li{ align-items:flex-start; list-style:none; font-size:18px; color:white; cursor:pointer; padding-top:20px;}
@@ -20,15 +25,21 @@ a:hover {color:black;}
 .fs{font-size:28px; padding-left:12px;}
 .i-size{font-size:38px; color:blue; padding-right:12px;}
 .admin-home{ background-color:#f5f5f5; }
-.card{ width:80%; background-color:white; margin:10px auto; border-radius:6px; 
+.card{
+    width:80%; margin:10px auto; border-radius:8px; padding-bottom:12px;
     -webkit-box-shadow: 8px -1px 20px 0px rgba(0,0,0,0.64);
     -moz-box-shadow: 8px -1px 20px 0px rgba(0,0,0,0.64);
     box-shadow:8px -1px 20px 0px rgba(0,0,0,0.64);
 }
 .g-4, .gy-4 {--bs-gutter-y: 1rem;}
+.card-1{background: transparent linear-gradient(117deg, #8ED6EE4D 0%, #84FAB04D 100%) 0% 0% no-repeat padding-box;}
+.card-2{background: transparent linear-gradient(117deg, #AD62F84D 0%, #F68BE04D 100%) 0% 0% no-repeat padding-box;}
+.card-3{background: transparent linear-gradient(299deg, #E2E0EE 0%, #E3E0EDFB 22%, #F6E9D9 100%) 0% 0% no-repeat padding-box;}
+.card-4{background: transparent linear-gradient(282deg, #CAF4CF80 0%, #D6F9BB80 100%) 0% 0% no-repeat padding-box;}
+.card-5{background: transparent linear-gradient(282deg, #FEE2E7 0%, #FFEBD085 100%) 0% 0% no-repeat padding-box;}
 
 /* Admin footer css */
-.s-icon{font-size:25px; padding-right:13px;}
+.s-icon{font-size:25px;}
 .foter{border-top:1px solid grey; line-height:28px;}
 
 /* all_student.php $ approved.php $ waiting.php $ reject.php page css */
