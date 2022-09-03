@@ -55,7 +55,7 @@
             <div class="form-group">
                 <button type="submit" name="submit" class="form-control btn btn-success btn-lg btn-block signup-btn">Forgot Password</button>
             </div>
-            <div class="text-center">If you don't want to forgot your password? <a href="login.php">Login here</a></div>
+            <div class="text-center">If you don't want to forgot your password? <a href="login.php"><b>Login here</b></a></div>
         </form>
     </div>
 </body>

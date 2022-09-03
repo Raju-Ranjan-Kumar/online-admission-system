@@ -8176,9 +8176,10 @@ h1, h2, h3, h4, h5,
   padding-bottom: 0; }
 
   .heading-section {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     color: #000;
+    text-align: center;
 }
 
 .img {

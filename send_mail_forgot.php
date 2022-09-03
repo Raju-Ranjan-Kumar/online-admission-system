@@ -25,20 +25,20 @@
         function send_mail($email,$subject,$message){
             $mail = new PHPMailer(true);
             try {
-                $mail->SMTPDebug = SMTP::DEBUG_OFF;                         
-                $mail->isSMTP();                                           
-                $mail->Host       = 'smtp.gmail.com';                      
-                $mail->SMTPAuth   = true;                                  
-                $mail->Username   = 'babansingh121484@gmail.com';           
-                $mail->Password   = '6202975094';                          
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;           
-                $mail->Port       = 465;                                    
+                $mail->SMTPDebug = SMTP::DEBUG_OFF;
+                $mail->isSMTP();
+                $mail->Host       = 'smtp.gmail.com';
+                $mail->SMTPAuth   = true;
+                $mail->Username   = 'babansingh121484@gmail.com';
+                $mail->Password   = 'Raju@6202975094';
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                $mail->Port       = 465;
 
-                $mail->setFrom('babansingh121484@gmail.com', 'Raju Ranjan Kumar');   
-                $mail->addAddress($email);                                         
-                $mail->addReplyTo('babansingh121484@gmail.com', 'Controller');       
+                $mail->setFrom('babansingh121484@gmail.com', 'Raju Ranjan Kumar');
+                $mail->addAddress($email);
+                $mail->addReplyTo('babansingh121484@gmail.com', 'Controller');
 
-                $mail->isHTML(true);                                          
+                $mail->isHTML(true);
                 $mail->Subject = $subject;
                 $mail->Body    = $message;
 

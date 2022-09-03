@@ -12,7 +12,7 @@ body {background:#dfe7e9; font-family:'Roboto', sans-serif;}
 .signup-form h2{text-align:center; font-size:28px;}
 .signup-form .form-group {margin-bottom:20px;}
 .signup-btn{text-align:center; border-color:#5cb85c; transition:all 0.4s;}
-.signup-btn:hover{background:#5cb85c; opacity:0.8;}
+.signup-btn:hover{background:blue; opacity:0.8;}
 
 /* id_card.php css */
 .container1{width:35%; background-color:aliceblue; margin:auto; border-radius:10px;}
@@ -52,7 +52,7 @@ div.header1 { margin:0 -38px; padding:1.8em 51px;}
 /* send_mail_forgot.php css */
 .signup-form a {color:#5cb85c;}
 .signup-form .btn {font-size:18px; line-height:26px; font-weight:bold; text-align:center;}
-.or-seperator {margin:50px 0 15px; text-align:center; border-top:1px solid #e0e0e0;}
+.or-seperator {margin:45px 0 5px; text-align:center; border-top:1px solid #e0e0e0;}
 .or-seperator b{padding:0 10px; width:40px; height:40px; font-size:16px; text-align:center; line-height:40px; background:#fff; display:inline-block;
     border:1px solid #e0e0e0; border-radius:50%; position:relative; top:-22px; z-index:1;}
 
@@ -66,3 +66,4 @@ div.header1 { margin:0 -38px; padding:1.8em 51px;}
 .social-btn .btn-danger {background:#df4930;}
 .social-btn .btn i {float:left; margin:3px 10px; font-size:20px;}
 #servicequal{height:30px; width:135px; border-radius:10px; text-align:center; display: flex; margin: auto;}
+.input-group-text {border-radius: 50px}
